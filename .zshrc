@@ -17,7 +17,8 @@ zstyle ':vcs_info:*' formats "%F{green}%c%u[%b]%f"
 zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
 
-PROMPT="%{[38;5;85m%}%n%f: %~%(!.#.%%) %{[0m%}"
+# PROMPT="%{[38;5;85m%}%n%f: %~%(!.#.%%) %{[0m%}"
+PROMPT="%{[01;32m%}%n@%m%f%{[0m%}:%f%{[01;34m%}~%(!.#.$) %f%{[0m%}"
 RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 
 export LANG=ja_JP.UTF-8
