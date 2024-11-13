@@ -1,0 +1,25 @@
+[ghq]
+	root = /Users/ctare/my/go/src
+[user]
+	name = ctare
+	email = sankaku900622@yahoo.co.jp
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[alias]
+	s = status
+	m = commit
+  b = branch
+	co = checkout
+  pullhere = !git pull origin $(git rev-parse --abbrev-ref HEAD)
+  pushhere = !git push origin $(git rev-parse --abbrev-ref HEAD)
+[core]
+	excludesfile = /Users/ctare/.gitignore_global
+	editor = nvim
+[merge]
+	tool = unityyamlmerge
+[mergetool "unityyamlmerge"]
+	trustExitCode = false
+	cmd = '/Applications/Unity/Unity.app/Contents/Tools/UnityYAMLMerge' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
