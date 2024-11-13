@@ -1,0 +1,44 @@
+{
+  "red": {
+    "color": "#f00",
+    "options": {
+      "bold": false,
+      "italic": false
+    }
+  },
+  "green": {
+    "color": "#0f0",
+    "options": {
+      "bold": false,
+      "italic": false
+    }
+  },
+  "blue": {
+    "color": "#00f",
+    "options": {
+      "bold": false,
+      "italic": false
+    }
+  },
+  "yellow": {
+    "color": "#ff0",
+    "options": {
+      "bold": false,
+      "italic": false
+    }
+  },
+  "orange": {
+    "color": "fa0",
+    "options": {
+      "bold": true,
+      "itelic": false
+    }
+  },
+  "sky": {
+    "color": "0af",
+    "options": {
+      "bold": false,
+      "itelic": false
+    }
+  }
+}
